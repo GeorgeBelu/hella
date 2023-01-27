@@ -143,13 +143,13 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
             <stringProp name="HTTPSampler.method">POST</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
             <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-            <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
             <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
             <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
             <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="TestPlan.comments">Created from cURL on 2023-01-02T18:35:59.0398283</stringProp>
+            <stringProp name="TestPlan.comments">Created from cURL on 2023-01-27T14:37:55.1020312</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP HeaderManager" enabled="true">
@@ -168,7 +168,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                 </elementProp>
                 <elementProp name="authorization" elementType="Header">
                   <stringProp name="Header.name">authorization</stringProp>
-                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImNsaWQiOiIxaXhjeTEyN2V2ZzN6In0.eyJjY2lkIjoiY2hzYnJua3VzY3dxZWNpIiwic3ViIjotMTAyLCJhdWQiOiJ4ZmZkdmFncDB0YTVwYmI0eG5rYnhkbzUiLCJjb3JwIjoiaGVsbGEiLCJjdWlkIjoxLCJ0emlkIjoyOCwibmJkIjoiMjAyMzAxMDIxNjMyMjkxMDYiLCJleHAiOiIyMDIzMDEwMjE3MzMyOTEwNiIsImlhdCI6IjIwMjMwMTAyMTYzMjI5MTA2In0.tZqsU0NbXzHCzDJC_8fUQO5DL_wNmve6Mqz-hAc4qL6_XYjJUwBux0BKQTwlur-Ftnim37HBVnnNGh4UpVrT2w</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImNsaWQiOiIxaXhjeTEyN2V2ZzN6In0.eyJjY2lkIjoiY2hzYnJua3VzY3dxZWNpIiwic3ViIjotMTAyLCJhdWQiOiJqZHplaTRpaTNucWxvZmFzcTM0Y2xkeHkiLCJjb3JwIjoiaGVsbGEiLCJjdWlkIjoxLCJ0emlkIjoxLCJuYmQiOiIyMDIzMDEyNzEyMzQyMzIxNyIsImV4cCI6IjIwMjMwMTI3MTMzNTIzMjE3IiwiaWF0IjoiMjAyMzAxMjcxMjM0MjMyMTcifQ.gcivaFqo43H2FLHdPUGpvAXxjl2HksS2r_QPKw_KnxD02Jm9ZOf20_gcWTnBjNiOfP6sAEI3_vL3w1qHREUbPQ</stringProp>
                 </elementProp>
                 <elementProp name="cache-control" elementType="Header">
                   <stringProp name="Header.name">cache-control</stringProp>
@@ -192,7 +192,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                 </elementProp>
                 <elementProp name="sec-ch-ua" elementType="Header">
                   <stringProp name="Header.name">sec-ch-ua</stringProp>
-                  <stringProp name="Header.value">^\^Not?A_Brand^\^;v=^\^8^\^, ^\^Chromium^\^;v=^\^108^\^, ^\^Microsoft</stringProp>
+                  <stringProp name="Header.value">^\^Not_A</stringProp>
                 </elementProp>
                 <elementProp name="sec-ch-ua-mobile" elementType="Header">
                   <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -216,14 +216,14 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                 </elementProp>
                 <elementProp name="user-agent" elementType="Header">
                   <stringProp name="Header.name">user-agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.69</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Encoding" elementType="Header">
                   <stringProp name="Header.name">Accept-Encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate</stringProp>
                 </elementProp>
               </collectionProp>
-              <stringProp name="TestPlan.comments">Created from cURL on 2023-01-02T18:35:59.0398283</stringProp>
+              <stringProp name="TestPlan.comments">Created from cURL on 2023-01-27T14:37:55.1020312</stringProp>
             </HeaderManager>
             <hashTree/>
             <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="totalCount" enabled="true">
@@ -253,7 +253,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&quot;careerSiteId&quot;:3,&quot;careerSitePageId&quot;:3,&quot;pageNumber&quot;:${xpageNumber},&quot;pageSize&quot;:25,&quot;cultureId&quot;:1,&quot;searchText&quot;:&quot;&quot;,&quot;cultureName&quot;:&quot;en-US&quot;,&quot;states&quot;:[],&quot;countryCodes&quot;:[],&quot;cities&quot;:[],&quot;placeID&quot;:&quot;ChIJw3aJlSb_sUARlLEEqJJP74Q&quot;,&quot;radius&quot;:null,&quot;postingsWithinDays&quot;:null,&quot;customFieldCheckboxKeys&quot;:[],&quot;customFieldDropdowns&quot;:[],&quot;customFieldRadios&quot;:[]}</stringProp>
+                    <stringProp name="Argument.value">{&quot;careerSiteId&quot;:3,&quot;careerSitePageId&quot;:3,&quot;pageNumber&quot;:1,&quot;pageSize&quot;:25,&quot;cultureId&quot;:1,&quot;searchText&quot;:&quot;&quot;,&quot;cultureName&quot;:&quot;en-US&quot;,&quot;states&quot;:[],&quot;countryCodes&quot;:[],&quot;cities&quot;:[],&quot;placeID&quot;:&quot;ChIJw3aJlSb_sUARlLEEqJJP74Q&quot;,&quot;radius&quot;:null,&quot;postingsWithinDays&quot;:null,&quot;customFieldCheckboxKeys&quot;:[],&quot;customFieldDropdowns&quot;:[],&quot;customFieldRadios&quot;:[]}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
@@ -266,13 +266,13 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
               <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
-              <stringProp name="TestPlan.comments">Created from cURL on 2023-01-02T18:35:59.0398283</stringProp>
+              <stringProp name="TestPlan.comments">Created from cURL on 2023-01-27T14:37:55.1020312</stringProp>
             </HTTPSamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP HeaderManager" enabled="true">
@@ -291,7 +291,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                   </elementProp>
                   <elementProp name="authorization" elementType="Header">
                     <stringProp name="Header.name">authorization</stringProp>
-                    <stringProp name="Header.value">Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImNsaWQiOiIxaXhjeTEyN2V2ZzN6In0.eyJjY2lkIjoiY2hzYnJua3VzY3dxZWNpIiwic3ViIjotMTAyLCJhdWQiOiJ4ZmZkdmFncDB0YTVwYmI0eG5rYnhkbzUiLCJjb3JwIjoiaGVsbGEiLCJjdWlkIjoxLCJ0emlkIjoyOCwibmJkIjoiMjAyMzAxMDIxNjMyMjkxMDYiLCJleHAiOiIyMDIzMDEwMjE3MzMyOTEwNiIsImlhdCI6IjIwMjMwMTAyMTYzMjI5MTA2In0.tZqsU0NbXzHCzDJC_8fUQO5DL_wNmve6Mqz-hAc4qL6_XYjJUwBux0BKQTwlur-Ftnim37HBVnnNGh4UpVrT2w</stringProp>
+                    <stringProp name="Header.value">Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImNsaWQiOiIxaXhjeTEyN2V2ZzN6In0.eyJjY2lkIjoiY2hzYnJua3VzY3dxZWNpIiwic3ViIjotMTAyLCJhdWQiOiJqZHplaTRpaTNucWxvZmFzcTM0Y2xkeHkiLCJjb3JwIjoiaGVsbGEiLCJjdWlkIjoxLCJ0emlkIjoxLCJuYmQiOiIyMDIzMDEyNzEyMzQyMzIxNyIsImV4cCI6IjIwMjMwMTI3MTMzNTIzMjE3IiwiaWF0IjoiMjAyMzAxMjcxMjM0MjMyMTcifQ.gcivaFqo43H2FLHdPUGpvAXxjl2HksS2r_QPKw_KnxD02Jm9ZOf20_gcWTnBjNiOfP6sAEI3_vL3w1qHREUbPQ</stringProp>
                   </elementProp>
                   <elementProp name="cache-control" elementType="Header">
                     <stringProp name="Header.name">cache-control</stringProp>
@@ -315,7 +315,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">^\^Not?A_Brand^\^;v=^\^8^\^, ^\^Chromium^\^;v=^\^108^\^, ^\^Microsoft</stringProp>
+                    <stringProp name="Header.value">^\^Not_A</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -339,14 +339,14 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                   </elementProp>
                   <elementProp name="user-agent" elementType="Header">
                     <stringProp name="Header.name">user-agent</stringProp>
-                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.54</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.69</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Encoding" elementType="Header">
                     <stringProp name="Header.name">Accept-Encoding</stringProp>
                     <stringProp name="Header.value">gzip, deflate</stringProp>
                   </elementProp>
                 </collectionProp>
-                <stringProp name="TestPlan.comments">Created from cURL on 2023-01-02T18:35:59.0398283</stringProp>
+                <stringProp name="TestPlan.comments">Created from cURL on 2023-01-27T14:37:55.1020312</stringProp>
               </HeaderManager>
               <hashTree/>
               <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="title" enabled="true">
