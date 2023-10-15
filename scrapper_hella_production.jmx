@@ -124,7 +124,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
         </hashTree>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname=" ===   GET open positions from WEBSITE    ====" enabled="true"/>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET number of open positions" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/rec-job-search/external/jobs" enabled="true">
             <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
             <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
               <collectionProp name="Arguments.arguments">
@@ -149,7 +149,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
             <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
             <stringProp name="HTTPSampler.connect_timeout"></stringProp>
             <stringProp name="HTTPSampler.response_timeout"></stringProp>
-            <stringProp name="TestPlan.comments">Created from cURL on 2023-01-27T14:37:55.1020312</stringProp>
+            <stringProp name="TestPlan.comments">Created from cURL on 2023-10-15T17:54:18.828</stringProp>
           </HTTPSamplerProxy>
           <hashTree>
             <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP HeaderManager" enabled="true">
@@ -164,11 +164,11 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                 </elementProp>
                 <elementProp name="accept-language" elementType="Header">
                   <stringProp name="Header.name">accept-language</stringProp>
-                  <stringProp name="Header.value">en-GB,en;q=0.9,en-US;q=0.8,ro;q=0.7</stringProp>
+                  <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
                 </elementProp>
                 <elementProp name="authorization" elementType="Header">
                   <stringProp name="Header.name">authorization</stringProp>
-                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImNsaWQiOiIxaXhjeTEyN2V2ZzN6In0.eyJjY2lkIjoiY2hzYnJua3VzY3dxZWNpIiwic3ViIjotMTAyLCJhdWQiOiJqZHplaTRpaTNucWxvZmFzcTM0Y2xkeHkiLCJjb3JwIjoiaGVsbGEiLCJjdWlkIjoxLCJ0emlkIjoxLCJuYmQiOiIyMDIzMDEyNzEyMzQyMzIxNyIsImV4cCI6IjIwMjMwMTI3MTMzNTIzMjE3IiwiaWF0IjoiMjAyMzAxMjcxMjM0MjMyMTcifQ.gcivaFqo43H2FLHdPUGpvAXxjl2HksS2r_QPKw_KnxD02Jm9ZOf20_gcWTnBjNiOfP6sAEI3_vL3w1qHREUbPQ</stringProp>
+                  <stringProp name="Header.value">Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImNsaWQiOiIxaXhjeTEyN2V2ZzN6In0.eyJjY2lkIjoiY2hzYnJua3VzY3dxZWNpIiwic3ViIjotMTAyLCJhdWQiOiJzcHJkY2Exc293b3FyZm11dzIxazJlNXkiLCJjb3JwIjoiaGVsbGEiLCJjdWlkIjoxLCJ0emlkIjoxLCJuYmQiOiIyMDIzMTAxNTE0NTE0OTY1MiIsImV4cCI6IjIwMjMxMDE1MTU1MjQ5NjUyIiwiaWF0IjoiMjAyMzEwMTUxNDUxNDk2NTIifQ.UmdJhT--o4Nmflx-lrdj4TFrSRF1w3S_My98LsoTUKEll1ujjfaP20RfpbSw8d2SeyLX--INRYZvykkKraQm1g</stringProp>
                 </elementProp>
                 <elementProp name="cache-control" elementType="Header">
                   <stringProp name="Header.name">cache-control</stringProp>
@@ -192,7 +192,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                 </elementProp>
                 <elementProp name="sec-ch-ua" elementType="Header">
                   <stringProp name="Header.name">sec-ch-ua</stringProp>
-                  <stringProp name="Header.value">^\^Not_A</stringProp>
+                  <stringProp name="Header.value">^\^Google</stringProp>
                 </elementProp>
                 <elementProp name="sec-ch-ua-mobile" elementType="Header">
                   <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -216,44 +216,146 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                 </elementProp>
                 <elementProp name="user-agent" elementType="Header">
                   <stringProp name="Header.name">user-agent</stringProp>
-                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.69</stringProp>
+                  <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36</stringProp>
                 </elementProp>
                 <elementProp name="Accept-Encoding" elementType="Header">
                   <stringProp name="Header.name">Accept-Encoding</stringProp>
                   <stringProp name="Header.value">gzip, deflate</stringProp>
                 </elementProp>
               </collectionProp>
-              <stringProp name="TestPlan.comments">Created from cURL on 2023-01-27T14:37:55.1020312</stringProp>
+              <stringProp name="TestPlan.comments">Created from cURL on 2023-10-15T17:54:18.828</stringProp>
             </HeaderManager>
             <hashTree/>
-            <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="totalCount" enabled="true">
-              <stringProp name="JMESExtractor.referenceName">totalCount</stringProp>
+            <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="title" enabled="true">
+              <stringProp name="JMESExtractor.referenceName">title</stringProp>
+              <stringProp name="JMESExtractor.jmesPathExpr">data.requisitions[*].displayJobTitle</stringProp>
+              <stringProp name="JMESExtractor.matchNumber">-1</stringProp>
+            </JMESPathExtractor>
+            <hashTree/>
+            <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="city" enabled="true">
+              <stringProp name="JMESExtractor.referenceName">city</stringProp>
+              <stringProp name="JMESExtractor.jmesPathExpr">data.requisitions[*].locations[0].city</stringProp>
+              <stringProp name="JMESExtractor.matchNumber">-1</stringProp>
+            </JMESPathExtractor>
+            <hashTree/>
+            <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="id" enabled="true">
+              <stringProp name="JMESExtractor.referenceName">id</stringProp>
+              <stringProp name="JMESExtractor.jmesPathExpr">data.requisitions[*].requisitionId</stringProp>
+              <stringProp name="JMESExtractor.matchNumber">-1</stringProp>
+            </JMESPathExtractor>
+            <hashTree/>
+            <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="total" enabled="true">
+              <stringProp name="JMESExtractor.referenceName">total</stringProp>
               <stringProp name="JMESExtractor.jmesPathExpr">data.totalCount</stringProp>
               <stringProp name="JMESExtractor.matchNumber">1</stringProp>
             </JMESPathExtractor>
             <hashTree/>
           </hashTree>
+          <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname=" ===   CREATE a LIST of open positions    ====" enabled="true">
+            <stringProp name="TestPlan.comments">Transform</stringProp>
+          </GenericController>
+          <hashTree>
+            <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+              <stringProp name="TestPlan.comments">https://hella.csod.com/ux/ats/careersite/3/home/requisition/13297?c=hella</stringProp>
+              <stringProp name="ForeachController.inputVal">title</stringProp>
+              <stringProp name="ForeachController.returnVal">job</stringProp>
+              <boolProp name="ForeachController.useSeparator">true</boolProp>
+              <stringProp name="ForeachController.startIndex">0</stringProp>
+            </ForeachController>
+            <hashTree>
+              <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+                <stringProp name="CounterConfig.start">1</stringProp>
+                <stringProp name="CounterConfig.end">25</stringProp>
+                <stringProp name="CounterConfig.incr">1</stringProp>
+                <stringProp name="CounterConfig.name">k</stringProp>
+                <stringProp name="CounterConfig.format"></stringProp>
+                <boolProp name="CounterConfig.per_user">false</boolProp>
+              </CounterConfig>
+              <hashTree/>
+              <JSR223Sampler guiclass="TestBeanGUI" testclass="JSR223Sampler" testname="${job}" enabled="true">
+                <stringProp name="cacheKey">true</stringProp>
+                <stringProp name="filename"></stringProp>
+                <stringProp name="parameters"></stringProp>
+                <stringProp name="script">var k = vars.get(&quot;k&quot;);
+var title = vars.get(&quot;job&quot;);
+var link  = vars.get(&quot;id_&quot;+k);
+link = &quot;https://hella.csod.com/ux/ats/careersite/3/home/requisition/&quot;+link+&quot;?c=hella&quot;;
+var country = &quot;Romania&quot;;
+var city =  vars.get(&quot;city_&quot;+k);
+
+String this_job = &apos;{&quot;job_title&quot;:&quot;&apos;+title+&apos;&quot;, &quot;job_link&quot;:&quot;&apos;+link+&apos;&quot;,&quot;company&quot;:&quot;${company}&quot;,&quot;country&quot;:&quot;&apos;+country+&apos;&quot;,&quot;city&quot;:&quot;&apos;+city+&apos;&quot;}&apos;;
+var jobList = vars.getObject(&quot;jobList&quot;);
+jobList = jobList + this_job;
+vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
+                <stringProp name="scriptLanguage">groovy</stringProp>
+              </JSR223Sampler>
+              <hashTree/>
+            </hashTree>
+            <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+              <boolProp name="ResultCollector.error_logging">false</boolProp>
+              <objProp>
+                <name>saveConfig</name>
+                <value class="SampleSaveConfiguration">
+                  <time>true</time>
+                  <latency>true</latency>
+                  <timestamp>true</timestamp>
+                  <success>true</success>
+                  <label>true</label>
+                  <code>true</code>
+                  <message>true</message>
+                  <threadName>true</threadName>
+                  <dataType>true</dataType>
+                  <encoding>false</encoding>
+                  <assertions>true</assertions>
+                  <subresults>true</subresults>
+                  <responseData>false</responseData>
+                  <samplerData>false</samplerData>
+                  <xml>false</xml>
+                  <fieldNames>true</fieldNames>
+                  <responseHeaders>false</responseHeaders>
+                  <requestHeaders>false</requestHeaders>
+                  <responseDataOnError>false</responseDataOnError>
+                  <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                  <assertionsResultsToSave>0</assertionsResultsToSave>
+                  <bytes>true</bytes>
+                  <sentBytes>true</sentBytes>
+                  <url>true</url>
+                  <threadCounts>true</threadCounts>
+                  <idleTime>true</idleTime>
+                  <connectTime>true</connectTime>
+                </value>
+              </objProp>
+              <stringProp name="filename"></stringProp>
+            </ResultCollector>
+            <hashTree/>
+          </hashTree>
+          <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+            <boolProp name="displayJMeterProperties">false</boolProp>
+            <boolProp name="displayJMeterVariables">true</boolProp>
+            <boolProp name="displaySystemProperties">false</boolProp>
+          </DebugSampler>
+          <hashTree/>
           <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
             <boolProp name="LoopController.continue_forever">true</boolProp>
-            <stringProp name="LoopController.loops">${__jexl2(${totalCount}/25+1,)}</stringProp>
+            <stringProp name="LoopController.loops">${__jexl3(${total}/25,)}</stringProp>
           </LoopController>
           <hashTree>
             <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
-              <stringProp name="CounterConfig.start">1</stringProp>
+              <stringProp name="CounterConfig.start">2</stringProp>
               <stringProp name="CounterConfig.end"></stringProp>
               <stringProp name="CounterConfig.incr">1</stringProp>
-              <stringProp name="CounterConfig.name">xpageNumber</stringProp>
+              <stringProp name="CounterConfig.name">i</stringProp>
               <stringProp name="CounterConfig.format"></stringProp>
               <boolProp name="CounterConfig.per_user">false</boolProp>
             </CounterConfig>
             <hashTree/>
-            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GET full list of open positions" enabled="true">
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/rec-job-search/external/jobs" enabled="true">
               <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
               <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
                 <collectionProp name="Arguments.arguments">
                   <elementProp name="" elementType="HTTPArgument">
                     <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                    <stringProp name="Argument.value">{&quot;careerSiteId&quot;:3,&quot;careerSitePageId&quot;:3,&quot;pageNumber&quot;:${xpageNumber},&quot;pageSize&quot;:25,&quot;cultureId&quot;:1,&quot;searchText&quot;:&quot;&quot;,&quot;cultureName&quot;:&quot;en-US&quot;,&quot;states&quot;:[],&quot;countryCodes&quot;:[],&quot;cities&quot;:[],&quot;placeID&quot;:&quot;ChIJw3aJlSb_sUARlLEEqJJP74Q&quot;,&quot;radius&quot;:null,&quot;postingsWithinDays&quot;:null,&quot;customFieldCheckboxKeys&quot;:[],&quot;customFieldDropdowns&quot;:[],&quot;customFieldRadios&quot;:[]}</stringProp>
+                    <stringProp name="Argument.value">{&quot;careerSiteId&quot;:3,&quot;careerSitePageId&quot;:3,&quot;pageNumber&quot;:${i},&quot;pageSize&quot;:25,&quot;cultureId&quot;:1,&quot;searchText&quot;:&quot;&quot;,&quot;cultureName&quot;:&quot;en-US&quot;,&quot;states&quot;:[],&quot;countryCodes&quot;:[],&quot;cities&quot;:[],&quot;placeID&quot;:&quot;ChIJw3aJlSb_sUARlLEEqJJP74Q&quot;,&quot;radius&quot;:null,&quot;postingsWithinDays&quot;:null,&quot;customFieldCheckboxKeys&quot;:[],&quot;customFieldDropdowns&quot;:[],&quot;customFieldRadios&quot;:[]}</stringProp>
                     <stringProp name="Argument.metadata">=</stringProp>
                   </elementProp>
                 </collectionProp>
@@ -266,13 +368,13 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
               <stringProp name="HTTPSampler.method">POST</stringProp>
               <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
               <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-              <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
               <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
               <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
               <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
               <stringProp name="HTTPSampler.connect_timeout"></stringProp>
               <stringProp name="HTTPSampler.response_timeout"></stringProp>
-              <stringProp name="TestPlan.comments">Created from cURL on 2023-01-02T18:35:59.0398283</stringProp>
+              <stringProp name="TestPlan.comments">Created from cURL on 2023-10-15T17:54:18.828</stringProp>
             </HTTPSamplerProxy>
             <hashTree>
               <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP HeaderManager" enabled="true">
@@ -287,11 +389,11 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                   </elementProp>
                   <elementProp name="accept-language" elementType="Header">
                     <stringProp name="Header.name">accept-language</stringProp>
-                    <stringProp name="Header.value">en-GB,en;q=0.9,en-US;q=0.8,ro;q=0.7</stringProp>
+                    <stringProp name="Header.value">en-GB,en-US;q=0.9,en;q=0.8</stringProp>
                   </elementProp>
                   <elementProp name="authorization" elementType="Header">
                     <stringProp name="Header.name">authorization</stringProp>
-                    <stringProp name="Header.value">Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImNsaWQiOiIxaXhjeTEyN2V2ZzN6In0.eyJjY2lkIjoiY2hzYnJua3VzY3dxZWNpIiwic3ViIjotMTAyLCJhdWQiOiJqZHplaTRpaTNucWxvZmFzcTM0Y2xkeHkiLCJjb3JwIjoiaGVsbGEiLCJjdWlkIjoxLCJ0emlkIjoxLCJuYmQiOiIyMDIzMDEyNzEyMzQyMzIxNyIsImV4cCI6IjIwMjMwMTI3MTMzNTIzMjE3IiwiaWF0IjoiMjAyMzAxMjcxMjM0MjMyMTcifQ.gcivaFqo43H2FLHdPUGpvAXxjl2HksS2r_QPKw_KnxD02Jm9ZOf20_gcWTnBjNiOfP6sAEI3_vL3w1qHREUbPQ</stringProp>
+                    <stringProp name="Header.value">Bearer eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCIsImNsaWQiOiIxaXhjeTEyN2V2ZzN6In0.eyJjY2lkIjoiY2hzYnJua3VzY3dxZWNpIiwic3ViIjotMTAyLCJhdWQiOiJzcHJkY2Exc293b3FyZm11dzIxazJlNXkiLCJjb3JwIjoiaGVsbGEiLCJjdWlkIjoxLCJ0emlkIjoxLCJuYmQiOiIyMDIzMTAxNTE0NTE0OTY1MiIsImV4cCI6IjIwMjMxMDE1MTU1MjQ5NjUyIiwiaWF0IjoiMjAyMzEwMTUxNDUxNDk2NTIifQ.UmdJhT--o4Nmflx-lrdj4TFrSRF1w3S_My98LsoTUKEll1ujjfaP20RfpbSw8d2SeyLX--INRYZvykkKraQm1g</stringProp>
                   </elementProp>
                   <elementProp name="cache-control" elementType="Header">
                     <stringProp name="Header.name">cache-control</stringProp>
@@ -315,7 +417,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua</stringProp>
-                    <stringProp name="Header.value">^\^Not_A</stringProp>
+                    <stringProp name="Header.value">^\^Google</stringProp>
                   </elementProp>
                   <elementProp name="sec-ch-ua-mobile" elementType="Header">
                     <stringProp name="Header.name">sec-ch-ua-mobile</stringProp>
@@ -339,14 +441,14 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                   </elementProp>
                   <elementProp name="user-agent" elementType="Header">
                     <stringProp name="Header.name">user-agent</stringProp>
-                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 Edg/109.0.1518.69</stringProp>
+                    <stringProp name="Header.value">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36</stringProp>
                   </elementProp>
                   <elementProp name="Accept-Encoding" elementType="Header">
                     <stringProp name="Header.name">Accept-Encoding</stringProp>
                     <stringProp name="Header.value">gzip, deflate</stringProp>
                   </elementProp>
                 </collectionProp>
-                <stringProp name="TestPlan.comments">Created from cURL on 2023-01-27T14:37:55.1020312</stringProp>
+                <stringProp name="TestPlan.comments">Created from cURL on 2023-10-15T17:54:18.828</stringProp>
               </HeaderManager>
               <hashTree/>
               <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="title" enabled="true">
@@ -355,17 +457,23 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                 <stringProp name="JMESExtractor.matchNumber">-1</stringProp>
               </JMESPathExtractor>
               <hashTree/>
-              <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="link" enabled="true">
-                <stringProp name="JMESExtractor.referenceName">link</stringProp>
+              <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="city" enabled="true">
+                <stringProp name="JMESExtractor.referenceName">city</stringProp>
+                <stringProp name="JMESExtractor.jmesPathExpr">data.requisitions[*].locations[0].city</stringProp>
+                <stringProp name="JMESExtractor.matchNumber">-1</stringProp>
+              </JMESPathExtractor>
+              <hashTree/>
+              <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="id" enabled="true">
+                <stringProp name="JMESExtractor.referenceName">id</stringProp>
                 <stringProp name="JMESExtractor.jmesPathExpr">data.requisitions[*].requisitionId</stringProp>
                 <stringProp name="JMESExtractor.matchNumber">-1</stringProp>
               </JMESPathExtractor>
               <hashTree/>
-              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="city" enabled="true">
-                <stringProp name="JSONPostProcessor.referenceNames">city</stringProp>
-                <stringProp name="JSONPostProcessor.jsonPathExprs">$..city</stringProp>
-                <stringProp name="JSONPostProcessor.match_numbers">-1</stringProp>
-              </JSONPostProcessor>
+              <JMESPathExtractor guiclass="JMESPathExtractorGui" testclass="JMESPathExtractor" testname="total" enabled="true">
+                <stringProp name="JMESExtractor.referenceName">total</stringProp>
+                <stringProp name="JMESExtractor.jmesPathExpr">data.totalCount</stringProp>
+                <stringProp name="JMESExtractor.matchNumber">-1</stringProp>
+              </JMESPathExtractor>
               <hashTree/>
             </hashTree>
             <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname=" ===   CREATE a LIST of open positions    ====" enabled="true">
@@ -373,6 +481,7 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
             </GenericController>
             <hashTree>
               <ForeachController guiclass="ForeachControlPanel" testclass="ForeachController" testname="ForEach Controller" enabled="true">
+                <stringProp name="TestPlan.comments">https://hella.csod.com/ux/ats/careersite/3/home/requisition/13297?c=hella</stringProp>
                 <stringProp name="ForeachController.inputVal">title</stringProp>
                 <stringProp name="ForeachController.returnVal">job</stringProp>
                 <boolProp name="ForeachController.useSeparator">true</boolProp>
@@ -392,56 +501,19 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                   <stringProp name="cacheKey">true</stringProp>
                   <stringProp name="filename"></stringProp>
                   <stringProp name="parameters"></stringProp>
-                  <stringProp name="script">var id = UUID.randomUUID().toString();
-var k = vars.get(&quot;k&quot;);
-var title = vars.get(&quot;title_&quot;+k);
-var link  =&quot;https://hella.csod.com/ux/ats/careersite/3/home/requisition/&quot; + vars.get(&quot;link_&quot;+k) + &quot;?c=hella&quot;;
-var city = vars.get(&quot;city_&quot; + k);
+                  <stringProp name="script">var k = vars.get(&quot;k&quot;);
+var title = vars.get(&quot;job&quot;);
+var link  = vars.get(&quot;id_&quot;+k);
+link = &quot;https://hella.csod.com/ux/ats/careersite/3/home/requisition/&quot;+link+&quot;?c=hella&quot;;
+var country = &quot;Romania&quot;;
+var city =  vars.get(&quot;city_&quot;+k);
 
-String this_job = &apos;{&quot;id&quot;:&quot;&apos;+id+&apos;&quot;,&quot;job_title&quot;:&quot;&apos;+title+&apos;&quot;, &quot;job_link&quot;:&quot;&apos;+link+&apos;&quot;,&quot;company&quot;:&quot;${company}&quot;,&quot;country&quot;:&quot;&apos;+&quot;România&quot;+&apos;&quot;,&quot;city&quot;:&quot;&apos;+city+&apos;&quot;}&apos;;
-
+String this_job = &apos;{&quot;job_title&quot;:&quot;&apos;+title+&apos;&quot;, &quot;job_link&quot;:&quot;&apos;+link+&apos;&quot;,&quot;company&quot;:&quot;${company}&quot;,&quot;country&quot;:&quot;&apos;+country+&apos;&quot;,&quot;city&quot;:&quot;&apos;+city+&apos;&quot;}&apos;;
 var jobList = vars.getObject(&quot;jobList&quot;);
 jobList = jobList + this_job;
 vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                   <stringProp name="scriptLanguage">groovy</stringProp>
                 </JSR223Sampler>
-                <hashTree/>
-                <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-                  <boolProp name="ResultCollector.error_logging">false</boolProp>
-                  <objProp>
-                    <name>saveConfig</name>
-                    <value class="SampleSaveConfiguration">
-                      <time>true</time>
-                      <latency>true</latency>
-                      <timestamp>true</timestamp>
-                      <success>true</success>
-                      <label>true</label>
-                      <code>true</code>
-                      <message>true</message>
-                      <threadName>true</threadName>
-                      <dataType>true</dataType>
-                      <encoding>false</encoding>
-                      <assertions>true</assertions>
-                      <subresults>true</subresults>
-                      <responseData>false</responseData>
-                      <samplerData>false</samplerData>
-                      <xml>false</xml>
-                      <fieldNames>true</fieldNames>
-                      <responseHeaders>false</responseHeaders>
-                      <requestHeaders>false</requestHeaders>
-                      <responseDataOnError>false</responseDataOnError>
-                      <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                      <assertionsResultsToSave>0</assertionsResultsToSave>
-                      <bytes>true</bytes>
-                      <sentBytes>true</sentBytes>
-                      <url>true</url>
-                      <threadCounts>true</threadCounts>
-                      <idleTime>true</idleTime>
-                      <connectTime>true</connectTime>
-                    </value>
-                  </objProp>
-                  <stringProp name="filename"></stringProp>
-                </ResultCollector>
                 <hashTree/>
               </hashTree>
               <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
@@ -484,43 +556,6 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
             </hashTree>
           </hashTree>
         </hashTree>
-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <sentBytes>true</sentBytes>
-              <url>true</url>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-              <connectTime>true</connectTime>
-            </value>
-          </objProp>
-          <stringProp name="filename"></stringProp>
-        </ResultCollector>
-        <hashTree/>
         <GenericController guiclass="LogicControllerGui" testclass="GenericController" testname=" ===   PUSH data to Search Engine  ====" enabled="true"/>
         <hashTree>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="push jobs to peviitor.ro database" enabled="true">
@@ -586,6 +621,54 @@ vars.putObject(&quot;jobList&quot;,jobList);</stringProp>
                   <stringProp name="Header.value">a2477322-2825-468b-8bd3-103ccfc05363</stringProp>
                 </elementProp>
               </collectionProp>
+            </HeaderManager>
+            <hashTree/>
+          </hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="/v1/logo/add/" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">[&#xd;
+  {&#xd;
+    &quot;id&quot;: &quot;Hella&quot;,&#xd;
+    &quot;logo&quot;: &quot;https://www.hella.com/hella-com/assets/images/layout_global/ForviaHella_Logo.svg&quot;&#xd;
+  }&#xd;
+]</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">api.peviitor.ro</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">https</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/v1/logo/add/</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">Created from cURL on 2023-10-15T18:17:25.677</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP HeaderManager" enabled="true">
+              <collectionProp name="HeaderManager.headers">
+                <elementProp name="accept" elementType="Header">
+                  <stringProp name="Header.name">accept</stringProp>
+                  <stringProp name="Header.value">*/*</stringProp>
+                </elementProp>
+                <elementProp name="Content-Type" elementType="Header">
+                  <stringProp name="Header.name">Content-Type</stringProp>
+                  <stringProp name="Header.value">application/json</stringProp>
+                </elementProp>
+              </collectionProp>
+              <stringProp name="TestPlan.comments">Created from cURL on 2023-10-15T18:17:25.677</stringProp>
             </HeaderManager>
             <hashTree/>
           </hashTree>
